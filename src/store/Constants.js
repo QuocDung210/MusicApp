@@ -1,0 +1,6 @@
+export const SET_NEXT = 'set_next'
+export const SET_PREV = 'set_prev'
+export const SET_RANDOM = 'set_random'
+export const SET_REPEAT = 'set_repeat'
+export const SET_CURRENT_PLAY = 'set_current_play'
+export const SET_SELECT_SONG = 'set_select_song'

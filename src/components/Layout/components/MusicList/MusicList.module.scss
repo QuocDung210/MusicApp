@@ -1,0 +1,61 @@
+.music__list{
+    flex: 1;
+    height: 200px;
+    margin: 10px 4px 10px 10px;
+    overflow-y: auto;
+    scroll-snap-type: y mandatory;
+    padding-right: 6px;
+
+    &::-webkit-scrollbar{
+        display: none;
+    }
+}
+
+.music__item{
+    background-color: #fff;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 2px 2px 5px #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.active{
+    background: linear-gradient(120deg,purple,#a200ff);
+    color: white;
+}
+
+
+.music__icon{
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+}
+
+.music__info{
+    flex: 1;
+    margin-left: 10px;
+    display:flex ;
+    flex-direction: column;
+}
+
+.music__name{
+    width: 100%;
+    font-size: 1.6rem;
+    font-weight: 600;
+    word-break: break-all;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.music__singer{
+    font-size: 1.4rem;
+    color: rgb(190, 190, 190);
+}
+
+
