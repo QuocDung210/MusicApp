@@ -1,16 +1,44 @@
-.wrapper{
-    width: 200px;
-    max-width: 200px;
-    margin: 10px auto;
-    display: flex;
+.wrapper {
+  width: 200px;
+  max-width: 200px;
+  margin: 10px auto;
+  display: flex;
 }
 
-.background__img{
-    background-image: url('https://assets.yande.re/data/preview/bf/0e/bf0e78fcc9d94d6ca44b59bcb4882896.jpg');
-    width: 100%;
-    padding-top: 100%;
-    background-size: cover;
-    border-radius: 50%;
-    margin: auto;
-    box-shadow: 0 0 5px yellow,0 0 10px purple,0 0 15px #a200ff;
+.background__img {
+  background-image: url("https://assets.yande.re/data/preview/bf/0e/bf0e78fcc9d94d6ca44b59bcb4882896.jpg");
+  width: 100%;
+  padding-top: 100%;
+  background-size: cover;
+  border-radius: 50%;
+  margin: auto;
+  box-shadow: 0 0 5px yellow, 0 0 10px purple, 0 0 15px #a200ff;
+}
+
+.rotate {
+  -webkit-animation: rotate 5s normal linear infinite;
+  animation: rotate 5s normal linear infinite;
+}
+
+@keyframes rotate {
+  0% {
+    -webkit-transform: rotate3d(0, 0, 1, 0deg);
+    transform: rotate3d(0, 0, 1, 0deg);
+  }
+  25% {
+    -webkit-transform: rotate3d(0, 0, 1, 90deg);
+    transform: rotate3d(0, 0, 1, 90deg);
+  }
+  50% {
+    -webkit-transform: rotate3d(0, 0, 1, 180deg);
+    transform: rotate3d(0, 0, 1, 180deg);
+  }
+  75% {
+    -webkit-transform: rotate3d(0, 0, 1, 270deg);
+    transform: rotate3d(0, 0, 1, 270deg);
+  }
+  100% {
+    -webkit-transform: rotate3d(0, 0, 1, 360deg);
+    transform: rotate3d(0, 0, 1, 360deg);
+  }
 }
